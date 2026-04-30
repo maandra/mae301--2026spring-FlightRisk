@@ -1,0 +1,42 @@
+Option 1: In order to simply access the app, a link to the FlightRisk App is included here:
+https://flightriskfinal-mae301.streamlit.app/
+This is the simplest and recommended method. If the Streamlit App appears to be asleep, simply use the option to wake it.
+
+Option 2: If you wish to set up the app for local use by using the provided code, follow these instructions:
+→ Environmental Setup and Information
+   - Use Python 3.11 or newer
+   - From the GitHub Phase 3 Folder:
+→ Access FlightRisk_Final
+  Important Files in the repository:
+    - app.py
+    - Requirements.txt
+    - Runtime.txt
+    - streamlit/config.toml
+    - src/flightrisk/
+    - artifacts/flight_risk_bundle.joblib
+    - artifacts/metrics.json
+    - train_model.py
+→ Clone From GitHub and Run Locally
+   - Clone the Repository
+   - Install Dependencies: powershell python -m pip install -r requirements.txt
+   - Run the Steamlit app: powershell python -m streamlit run app.py
+   - Then Open: http://localhost:8501
+
+Demo Walkthrough:
+Once accessed these are the steps to use the FlightRisk App:
+   1. Enter an origin airport, such as ‘LAX’
+   2. Enter a destination airport, ‘such as ‘SLC’
+   3. Choose a travel date
+   4. Optionally filter by airline
+   5. Enter a trip budget
+   6. Select a ranking mode:
+       - Best value 
+       - Lowest risk
+       - Lowest ticket price
+       - Lowest disruption cost
+    7. Click `Rank Flight Options`.
+→ No API Keys are required for the MVP as the app uses the included trained model file
+
+DATA Notes:
+The original flight and weather datasets are too large for a GitHub upload and are not needed for a demo. 
+
